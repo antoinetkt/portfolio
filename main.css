@@ -1,0 +1,386 @@
+
+/* Set Gray Background for the Entire Site */
+body {
+    background-color: #c4bebe; /* Use your preferred shade of gray */
+    margin: 0; /* Remove default margin for body element */
+}
+
+
+/* Navigation Styles */
+nav {
+    background-color: #333; /* Background color of the navigation bar */
+    position: fixed; /* Fixed position to keep it at the top */
+    width: 100%; /* Take up the full width of the viewport */
+    top: 0; /* Stick to the top of the viewport */
+}
+
+/* Navigation List Styles */
+nav ul {
+    list-style: none; 
+    margin: 0; 
+    padding: 0;
+    display: flex;
+}
+
+nav a {
+    font-size: 2.0em; 
+    color: white; 
+    text-decoration: none;
+    padding: 15px 20px; 
+    display: inline-block; 
+    transition: font-size 0.3s; 
+}
+nav a:hover {
+    font-size: 2.5em; 
+}
+
+#presentation{
+    background-image: url("image/montagne.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat:repeat;
+    padding-top: 50px;
+}
+
+#presentation p{
+    margin-left: 25%;
+    color: rgb(236, 231, 231);
+    text-align: justify;
+    font-size: 2em;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    text-shadow: 2px 2px 2px black;
+    width: 50%;
+}
+
+
+/* Center H2 Elements */
+h2 {
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    font-size: 3em; /* Increase font size */
+    margin-top: 50px; /* Add some top margin for spacing */
+}
+
+
+/* Compétences Section Styles */
+#competences {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+}
+#savoir-etre{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+}
+
+/* H2 Styles */
+#competences h2 {
+    width: 40%; /* Adjust width as needed */
+    text-align: center; /* Center the text */
+}
+
+#savoir-etre h2 {
+    width: 40%; /* Adjust width as needed */
+    text-align: left; /* Center the text */
+    margin-left: 10%;
+}
+
+/* Image Grid Styles */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 70%;
+}
+
+.image-container {
+    width: 47%;
+    margin: 10px; 
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#projet1,
+#projet2,
+#projet3,
+#projet4,
+#projet5,
+#projet6 {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    vertical-align: top; 
+    margin : 5%;
+}
+
+#projet{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    justify-content: center;
+}
+#projet h2 {
+   text-align: center;
+}
+#projet h3 {
+    text-align: center;
+    font-size: 2em;
+    margin: 2%;
+}
+
+#projet p {
+    
+    text-align: justify; 
+    font-size: 1.2em; 
+    line-height: 1.5; 
+    width: 90%;
+    margin: 5%;
+}
+
+#projet1,
+#projet2,
+#projet3,
+#projet4,
+#projet5,
+#projet6 {
+    border-radius: 25px;
+    border: 1px solid black;
+    width: 420px;
+    height: 300px;
+}
+
+.p-click1,
+.p-click2,
+.p-click3,
+.p-click4,
+.p-click5,
+.p-click6 {
+    display: none;
+    opacity: 0;
+}
+
+
+/* Add your existing CSS styles here */
+
+#projet1:hover p,
+#projet2:hover p,
+#projet3:hover p,
+#projet4:hover p,
+#projet5:hover p,
+#projet6:hover p
+{
+    display: none;
+    opacity: 0;
+}
+
+#projet1:hover .p-click1,
+#projet2:hover .p-click2,
+#projet3:hover .p-click3,
+#projet4:hover .p-click4,
+#projet5:hover .p-click5,
+#projet6:hover .p-click6
+{
+    display: block;
+    opacity: 1;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 3%;
+}
+
+#projet1 {
+    background-image: url("image/projet-agile.png");
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat:repeat;
+    color: rgb(230, 228, 228);
+   
+}
+#projet1 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+}
+
+
+#projet2{
+    background-image: url("image/chasse-au-monstre.png");
+    opacity: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat:repeat;
+    color: rgb(185, 24, 24);
+    text-shadow: 5px 5px 5px rgb(75, 212, 48);
+}
+#projet2 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+}
+
+#projet3 {
+    background-image: url("image/tchat.jpg");
+    opacity: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat:repeat;
+    color: rgb(0, 0, 0);
+    text-shadow: 5px 5px 5px rgb(255, 255, 255);
+}
+
+#projet h3 {
+    text-align: center;
+    font-size: 2em;
+    margin: 2%;
+    opacity: 1;
+}
+
+#projet3 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+}
+
+#projet4 {
+    background-image: url("image/API.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat:repeat;
+    color: rgb(0, 0, 0);
+    text-shadow: 5px 5px 5px rgb(255, 255, 255);
+}
+
+#projet5 {
+    background-image: url("image/heaven.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat:repeat;
+    color: rgb(0, 0, 0);
+    text-shadow: 5px 5px 5px rgb(255, 255, 255);
+}
+#projet6 {
+    background-image: url("image/planificationSpring.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat:repeat;
+    color: rgb(0, 0, 0);
+    text-shadow: 5px 5px 5px rgb(255, 255, 255);
+    max-width: 30%;
+    max-height: 30%;
+    
+}
+
+#formations {
+    display: flex;
+    align-items: center;
+    margin: 15%;
+}
+
+
+/* H2 Styles */
+#formations h2 {
+    
+    width:40%; /* Adjust width as needed */
+    text-align: center; /* Center the text */
+}
+#formations p {
+    width: 100%; 
+    font-size: 2em;
+    margin: 2%;
+}
+
+#contact div {
+    
+    display: flex;
+    align-items: center;
+    
+}
+#contact p {
+    width: 100%;
+    text-align: center; /* Center the text */
+    font-size: 1.5em;
+    margin: 5%;
+    color: rgb(0, 0, 0); /* Text color */
+    text-decoration: none;
+}
+
+#contact a {
+    width: 100%;
+    text-align: center; /* Center the text */
+    font-size: 1.5em;
+    margin: 5%;
+    color: rgb(0, 0, 0); /* Text color */
+    text-decoration: none;
+}
+
+h1 {
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    font-size: 3em; /* Increase font size */
+    margin-top: 1%; /* Add some top margin for spacing */
+}
+
+/* Modifier les styles de hover pour les projets */
+#java:hover .bull
+#html-css:hover .bull
+#js:hover .bull
+#postgresql:hover .bull
+#c:hover .bull
+#spring:hover .bull
+#react:hover .bull
+#mongo:hover .bull
+{
+    display: block;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.image-container{
+    max-width: 30%;
+    max-height: 30%;
+}
+
+/* Style de base pour les bulles */
+.bull {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+    font-size: 1.2em;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.image-container:hover .bull {
+    display: block;
+}
+
+/* Assurez-vous que les conteneurs de projet sont en position relative */
+#projet1, #projet2, #projet3, #projet4, #projet5, #projet6 {
+    position: relative;
+    overflow: hidden;
+}
